@@ -89,12 +89,14 @@ hexo g -d
 
 用markdown工具写好文章之后执行命令即可在博客显示
 
+部署到你的 Github 
+
 ```
-hexo g
-hexo s
+hexo clean
+hexo g -d
 ```
 
-
+部署前最好能先执行一下 hexo clean 命令
 
 
 
