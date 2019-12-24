@@ -52,14 +52,14 @@
 <meta property="og:site_name" content="CCCCC">
 <meta property="og:description" content="准备环境 安装NodeJS下载安装，安装位置可选，其他一路默认即可，最后有个是否自动安装相关环境的选项，不建议选择，会自动安装python2和VS2017等基本无关软件，且耗时巨长。 安装git，不会的参考廖雪峰git教程，其他教程都可以  安装完毕后在CMD中输入下面命令，如果出现版本号说明安装成功 123git versionnode -vnpm -v  安装 Hexo环境准备好后通过命令行进">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2019/12/24/images/%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AEhexo%E6%88%90%E5%8A%9F%E6%88%AA%E5%9B%BE.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/12/24/images/%E5%88%9B%E5%BB%BAGithubPage%E4%BB%93%E5%BA%93%E6%88%AA%E5%9B%BE.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/12/24/images/yml%E9%85%8D%E7%BD%AE%E6%88%AA%E5%9B%BE.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/12/24/images/hexo/%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AEhexo%E6%88%90%E5%8A%9F%E6%88%AA%E5%9B%BE.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/12/24/images/hexo/%E5%88%9B%E5%BB%BAGithubPage%E4%BB%93%E5%BA%93%E6%88%AA%E5%9B%BE.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/12/24/images/hexo/yml%E9%85%8D%E7%BD%AE%E6%88%AA%E5%9B%BE.jpg">
 <meta property="article:published_time" content="2019-12-24T07:32:15.236Z">
-<meta property="article:modified_time" content="2019-12-24T09:09:05.387Z">
+<meta property="article:modified_time" content="2019-12-24T12:46:18.169Z">
 <meta property="article:author" content="netizenHan">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2019/12/24/images/%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AEhexo%E6%88%90%E5%8A%9F%E6%88%AA%E5%9B%BE.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2019/12/24/images/hexo/%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AEhexo%E6%88%90%E5%8A%9F%E6%88%AA%E5%9B%BE.jpg">
 
 <link rel="canonical" href="http://yoursite.com/2019/12/24/hexo+githubPage%E7%9A%84%E9%85%8D%E7%BD%AE/">
 
@@ -198,7 +198,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-12-24 15:32:15 / 修改时间：17:09:05" itemprop="dateCreated datePublished" datetime="2019-12-24T15:32:15+08:00">2019-12-24</time>
+              <time title="创建时间：2019-12-24 15:32:15 / 修改时间：20:46:18" itemprop="dateCreated datePublished" datetime="2019-12-24T15:32:15+08:00">2019-12-24</time>
             </span>
 
           
@@ -233,13 +233,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p>以下是我本地的预览效果</p>
-<p><img src="../images/%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AEhexo%E6%88%90%E5%8A%9F%E6%88%AA%E5%9B%BE.jpg" alt="image"></p>
+<p><img src="../images/hexo/%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AEhexo%E6%88%90%E5%8A%9F%E6%88%AA%E5%9B%BE.jpg" alt="image"></p>
 <p>至此，你本地的博客就已经搭建成功，接下来就是部署到 Github Page 了。</p>
 <p>在GitHub中创建仓库，并且仓库名必须是名字.github.io，这样github会自动识别这是个githubPage</p>
-<p><img src="../images/%E5%88%9B%E5%BB%BAGithubPage%E4%BB%93%E5%BA%93%E6%88%AA%E5%9B%BE.jpg" alt="image"></p>
+<p><img src="../images/hexo/%E5%88%9B%E5%BB%BAGithubPage%E4%BB%93%E5%BA%93%E6%88%AA%E5%9B%BE.jpg" alt="image"></p>
 <p>权限要选public，免费用户无法使用private权限的githubPage</p>
 <h2 id="部署到-Github"><a href="#部署到-Github" class="headerlink" title="部署到 Github"></a>部署到 Github</h2><p>此时，本地和Github的工作做得差不了，是时候把它们两个连接起来了。你也可以查看官网的<a href="https://hexo.io/zh-cn/docs/deployment" target="_blank" rel="noopener">部署</a>教程。<br>先不着急，部署之前还需要修改配置和安装部署插件。<br>第一：打开项目根目录下的 _config.yml 配置文件配置参数。拉到文件末尾，填上如下配置：</p>
-<p><img src="../images/yml%E9%85%8D%E7%BD%AE%E6%88%AA%E5%9B%BE.jpg" alt="image"></p>
+<p><img src="../images/hexo/yml%E9%85%8D%E7%BD%AE%E6%88%AA%E5%9B%BE.jpg" alt="image"></p>
 <p>第二：要安装一个部署插件 <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
@@ -266,6 +266,13 @@
 
 
         
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2019/12/24/TortoiseSVN%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="next" title="win TortoiseSVN客户端使用">
+      win TortoiseSVN客户端使用 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
     
   </article>
@@ -316,7 +323,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

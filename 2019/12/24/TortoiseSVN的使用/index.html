@@ -45,29 +45,40 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CCCCC">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="前言：SVN(Subversion)是一种版本控制工具，跟Git原理和操作基本一致 什么是版本控制 把文件系统分为若干个版本，从创建的时刻起称为版本1，后面进行了一些修改或者其他的操作，提交上去后就变成了版本2，记录你的每一次版本操作，就是版本控制的用途。 准备环境 Windows10 TortoiseSVN   中文包可选  安装SVN官网提供的文件主要有三个，安装包、语言包、文档。  双击安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="win TortoiseSVN客户端使用">
+<meta property="og:url" content="http://yoursite.com/2019/12/24/TortoiseSVN%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="CCCCC">
+<meta property="og:description" content="前言：SVN(Subversion)是一种版本控制工具，跟Git原理和操作基本一致 什么是版本控制 把文件系统分为若干个版本，从创建的时刻起称为版本1，后面进行了一些修改或者其他的操作，提交上去后就变成了版本2，记录你的每一次版本操作，就是版本控制的用途。 准备环境 Windows10 TortoiseSVN   中文包可选  安装SVN官网提供的文件主要有三个，安装包、语言包、文档。  双击安装">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2019/12/24/images/svn/SVN%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%88%AA%E5%9B%BE.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/12/24/images/svn/SVN%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E6%88%AA%E5%9B%BE.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/12/24/images/svn/SVN%E9%80%89%E6%8B%A9%E5%AE%8C%E6%88%90%E6%88%AA%E5%9B%BE.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/12/24/images/svn/SVN%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/12/24/images/svn/SVNCheckout.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/12/24/images/svn/SVN%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81.jpg">
+<meta property="article:published_time" content="2019-12-24T12:50:13.702Z">
+<meta property="article:modified_time" content="2019-12-24T14:37:57.518Z">
 <meta property="article:author" content="netizenHan">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2019/12/24/images/svn/SVN%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%88%AA%E5%9B%BE.jpg">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2019/12/24/TortoiseSVN%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>CCCCC</title>
+  <title>win TortoiseSVN客户端使用 | CCCCC</title>
   
 
 
@@ -162,10 +173,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/24/TortoiseSVN%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -179,8 +190,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/24/TortoiseSVN%E7%9A%84%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">win TortoiseSVN客户端使用</a>
+          win TortoiseSVN客户端使用
         </h1>
 
         <div class="post-meta">
@@ -205,7 +215,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>SVN(Subversion)是一种版本控制工具，跟Git原理和操作基本一致</p>
+        <h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>SVN(Subversion)是一种版本控制工具，跟Git原理和操作基本一致</p>
 <p>什么是版本控制</p>
 <p>把文件系统分为若干个版本，从创建的时刻起称为版本1，后面进行了一些修改或者其他的操作，提交上去后就变成了版本2，记录你的每一次版本操作，就是版本控制的用途。</p>
 <h2 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h2><ol>
@@ -232,123 +242,33 @@
 
 <p>如果配置是对的会出现输入账号密码界面，账号密码由管理员设定好。</p>
 <img src="../images/svn/SVN输入密码.jpg" alt="inputAcount" style="zoom:80%;" />
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/24/hexo+githubPage%E7%9A%84%E9%85%8D%E7%BD%AE/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="netizenHan">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CCCCC">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/24/hexo+githubPage%E7%9A%84%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">WIN10下hexo+githubPage的配置</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-12-24 15:32:15 / 修改时间：20:46:18" itemprop="dateCreated datePublished" datetime="2019-12-24T15:32:15+08:00">2019-12-24</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h2><ol>
-<li>安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a>下载安装，安装位置可选，其他一路默认即可，最后有个是否自动安装相关环境的选项，不建议选择，会自动安装python2和VS2017等基本无关软件，且耗时巨长。</li>
-<li>安装git，不会的参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰git教程</a>，其他教程都可以</li>
-</ol>
-<p>安装完毕后在CMD中输入下面命令，如果出现版本号说明安装成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>环境准备好后通过命令行进入自己想要建立的文件夹内输入</p>
-<p>在命令行输入执行以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>安装 Hexo 完成后，再执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。这里的myBlog是文件夹名字，根据自己需要修改</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myBlog</span><br><span class="line">cd myBlog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p>新建完成后，指定文件夹的目录如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml # 网站的配置信息，您可以在此配置大部分的参数。 </span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds # 模版文件夹</span><br><span class="line">├── source  # 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者文件夹不会被编译打包到public文件夹</span><br><span class="line">|   ├── _drafts # 草稿文件</span><br><span class="line">|   └── _posts # 文章Markdowm文件 </span><br><span class="line">└── themes  # 主题文件夹</span><br></pre></td></tr></table></figure>
-
-<p>好了，如果上面的命令都没报错的话，就恭喜了，运行 hexo s 命令，其中 s 是 server 的缩写，在浏览器中输入 <a href="http://localhost/" target="_blank" rel="noopener">http://localhost</a>:4000 回车就可以预览效果了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>以下是我本地的预览效果</p>
-<p><img src="../images/hexo/%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AEhexo%E6%88%90%E5%8A%9F%E6%88%AA%E5%9B%BE.jpg" alt="image"></p>
-<p>至此，你本地的博客就已经搭建成功，接下来就是部署到 Github Page 了。</p>
-<p>在GitHub中创建仓库，并且仓库名必须是名字.github.io，这样github会自动识别这是个githubPage</p>
-<p><img src="../images/hexo/%E5%88%9B%E5%BB%BAGithubPage%E4%BB%93%E5%BA%93%E6%88%AA%E5%9B%BE.jpg" alt="image"></p>
-<p>权限要选public，免费用户无法使用private权限的githubPage</p>
-<h2 id="部署到-Github"><a href="#部署到-Github" class="headerlink" title="部署到 Github"></a>部署到 Github</h2><p>此时，本地和Github的工作做得差不了，是时候把它们两个连接起来了。你也可以查看官网的<a href="https://hexo.io/zh-cn/docs/deployment" target="_blank" rel="noopener">部署</a>教程。<br>先不着急，部署之前还需要修改配置和安装部署插件。<br>第一：打开项目根目录下的 _config.yml 配置文件配置参数。拉到文件末尾，填上如下配置：</p>
-<p><img src="../images/hexo/yml%E9%85%8D%E7%BD%AE%E6%88%AA%E5%9B%BE.jpg" alt="image"></p>
-<p>第二：要安装一个部署插件 <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>最后执行以下命令就可以部署上传啦，以下 g 是 generate 缩写，d 是 deploy 缩写：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-<p>稍等一会，在浏览器访问网址： <a href="https://xn--6qqv7i14ofosyrb.github.io/" target="_blank" rel="noopener">https://你的用户名.github.io</a> 就会看到你的博客啦！！</p>
-<p>文章存在source/_posts 下面的md文件</p>
-<p>用markdown工具写好文章之后执行命令即可在博客显示</p>
-<p>部署到你的 Github </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-<p>部署前最好能先执行一下 hexo clean 命令</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/24/hexo+githubPage%E7%9A%84%E9%85%8D%E7%BD%AE/" rel="prev" title="WIN10下hexo+githubPage的配置">
+      <i class="fa fa-chevron-left"></i> WIN10下hexo+githubPage的配置
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -377,6 +297,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备环境"><span class="nav-number">2.</span> <span class="nav-text">准备环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装SVN"><span class="nav-number">3.</span> <span class="nav-text">安装SVN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SVN的使用"><span class="nav-number">4.</span> <span class="nav-text">SVN的使用</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
