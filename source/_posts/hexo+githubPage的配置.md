@@ -53,13 +53,13 @@ hexo s
 
 以下是我本地的预览效果
 
-![image](../images/本地配置hexo成功截图.jpg)
+![image](../images/hexo/本地配置hexo成功截图.jpg)
 
 至此，你本地的博客就已经搭建成功，接下来就是部署到 Github Page 了。
 
 在GitHub中创建仓库，并且仓库名必须是名字.github.io，这样github会自动识别这是个githubPage
 
-![image](../images/创建GithubPage仓库截图.jpg)
+![image](../images/hexo/创建GithubPage仓库截图.jpg)
 
 权限要选public，免费用户无法使用private权限的githubPage
 
@@ -69,7 +69,7 @@ hexo s
 先不着急，部署之前还需要修改配置和安装部署插件。
 第一：打开项目根目录下的 _config.yml 配置文件配置参数。拉到文件末尾，填上如下配置：
 
-![image](../images/yml配置截图.jpg)
+![image](../images/hexo/yml配置截图.jpg)
 
 第二：要安装一个部署插件 [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git)。
 
