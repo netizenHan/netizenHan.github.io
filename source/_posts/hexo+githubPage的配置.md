@@ -45,7 +45,7 @@ npm install
 └── themes  # 主题文件夹
 ```
 
-好了，如果上面的命令都没报错的话，就恭喜了，运行 hexo s 命令，其中 s 是 server 的缩写，在浏览器中输入 [http://localhost](http://localhost/):4000 回车就可以预览效果了。
+好了，如果上面的命令都没报错的话，运行 hexo s 命令，其中 s 是 server 的缩写，在浏览器中输入 [http://localhost](http://localhost/):4000 回车就可以预览效果了。
 
 ```
 hexo s
@@ -53,13 +53,13 @@ hexo s
 
 以下是我本地的预览效果
 
-![image](../images/hexo/本地配置hexo成功截图.jpg)
+![image](/hexo+githubPage的配置/本地配置hexo成功截图.jpg)
 
 至此，你本地的博客就已经搭建成功，接下来就是部署到 Github Page 了。
 
 在GitHub中创建仓库，并且仓库名必须是名字.github.io，这样github会自动识别这是个githubPage
 
-![image](../images/hexo/创建GithubPage仓库截图.jpg)
+![image](/hexo+githubPage的配置/创建GithubPage仓库截图.jpg)
 
 权限要选public，免费用户无法使用private权限的githubPage
 
@@ -69,7 +69,7 @@ hexo s
 先不着急，部署之前还需要修改配置和安装部署插件。
 第一：打开项目根目录下的 _config.yml 配置文件配置参数。拉到文件末尾，填上如下配置：
 
-![image](../images/hexo/yml配置截图.jpg)
+![image](/hexo+githubPage的配置/yml配置截图.jpg)
 
 第二：要安装一个部署插件 [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git)。
 
@@ -77,13 +77,13 @@ hexo s
 npm install hexo-deployer-git --save
 ```
 
-最后执行以下命令就可以部署上传啦，以下 g 是 generate 缩写，d 是 deploy 缩写：
+最后执行以下命令就可以部署上传，以下 g 是 generate 缩写，d 是 deploy 缩写：
 
 ```
 hexo g -d
 ```
 
-稍等一会，在浏览器访问网址： [https://你的用户名.github.io](https://xn--6qqv7i14ofosyrb.github.io/) 就会看到你的博客啦！！
+稍等一会，在浏览器访问网址： [https://你的用户名.github.io](https://xn--6qqv7i14ofosyrb.github.io/) 就会看到你的博客
 
 文章存在source/_posts 下面的md文件
 
