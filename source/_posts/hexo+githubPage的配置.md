@@ -1,5 +1,7 @@
 ---
 title: WIN10下hexo+githubPage的配置
+categories:
+- 工具
 ---
 ## 准备环境
 
